@@ -109,7 +109,7 @@ entry.focus()
 links_label = tk.Label(root, text="Enter youtube urls below, separate by new line:")
 links_label.pack()
 
-text_area = tk.Text(root)
+text_area = tk.Text(root, bg="white")
 text_area.pack()
 
 # console_label = tk.Label(root, text="console: ")
