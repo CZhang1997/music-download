@@ -1,2 +1,2 @@
 
-python ../download_music.py
+python download_music.py
