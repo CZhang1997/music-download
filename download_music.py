@@ -51,6 +51,10 @@ def YoutubeAudioDownload(video_url):
 
 with open("./songs.txt", "r") as f:
     for song in f:
+        if len(song.strip()) == 0:
+            print("Skipping " + song)
+            continue
+        print(f"Downloading from {song}")
         YoutubeVideoDownload(song)
 
 if not os.path.exists(OUTPUT_DIR):
